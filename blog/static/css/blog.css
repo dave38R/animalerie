@@ -1,0 +1,32 @@
+body{
+margin:0}
+
+
+
+.ligne{
+    display:flex;
+    flex-direction:row;
+    background-color:
+}
+
+h1 {
+background-color:rgb(213, 87, 85);
+color:white;
+padding : 20px;
+margin:0;
+}
+
+.attr_animaux{
+    vertical-align:middle;
+    margin: auto 0;
+}
+
+.ligne * {
+    margin : auto 10px;
+    }
+
+.id_animaux {
+min-width : 500px;}
+
+.ligne:nth-child(even) {
+background-color:LightGray}
