@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+    <head>
+        <title>Animalerie de David</title>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <h1>Bienvenue à l'animalerie!</h1>
+        {% for animal in animals %}
+        <div class='ligne'>
+            <div class='id_animaux'>
+                <h2><a class='link' href="{% url 'animal_detail' id_animal=animal.id_animal %}">{{ animal.id_animal }}</a></h2>
+                <img src={{animal.photo}} width=150 height=150/>
+            </div>
+            <div class='attr_animaux'>
+                <h3>Etat : {{ animal.etat }}</h3>
+                <h3>Lieu : {{ animal.lieu }}</h3>
+            </div>
+            <div>
+                <img class="image" src={{animal.lieu.photo}} width=150 height="150"/>
+            </div>
+        </div>
+        {%endfor%}
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
+

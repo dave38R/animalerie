@@ -19,6 +19,7 @@ margin:0;
 .attr_animaux{
     vertical-align:middle;
     margin: auto 0;
+    min-width : 500px;
 }
 
 .ligne * {
@@ -26,7 +27,9 @@ margin:0;
     }
 
 .id_animaux {
-min-width : 500px;}
+min-width : 100px;}
+
 
 .ligne:nth-child(even) {
-background-color:LightGray}
+background-color:LightGray;}
+
